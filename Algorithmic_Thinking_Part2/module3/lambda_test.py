@@ -1,4 +1,5 @@
 import alg_cluster
+import random
 
 def test():
     t = (10,3)
@@ -22,4 +23,11 @@ def test3():
     lists = [alg_cluster.Cluster(0,0,0,0,0)]*10
 
     print lists
-test3()
+
+def test4():
+    lists = []
+    for i in range(10):
+        lists.append(random.randrange(-1,1))
+
+    print lists
+test4()
